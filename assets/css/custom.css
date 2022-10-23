@@ -1,0 +1,132 @@
+:root {
+  --color-primary: #f7ecde;
+  --color-secondary: #9ed2c6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero {
+  width: 500px;
+  
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.3px);
+  -webkit-backdrop-filter: blur(6.3px);
+  border: 1px solid rgba(255, 255, 255, 0.61);
+
+  background-color: var(--color-primary);
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.hero .content img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: block;
+  justify-content: center;
+  margin: auto;
+  padding: 30px;
+}
+
+.hero .content h1,
+p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+.content p i {
+  color: #f47c7c;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 40px;
+}
+.social a i {
+  color: #b31313;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 70px;
+}
+.btn .btn-1 {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ef9f9f;
+  border: 1px solid #ef9f9f;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn .btn-2 {
+  width: 150px;
+  height: 40px;
+  background-color: #f47c7c;
+  border: 1px solid #f47c7c;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn .btn-1:hover {
+  transition: margin-right 2s;
+  width: 160px;
+}
+
+.btn .btn-2:hover {
+  transition: margin-right 2s;
+  width: 160px;
+}
+.btn-1 a{
+  text-decoration: none;
+  color: #fff;
+}
+.btn-2 a{
+  text-decoration: none;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .hero {
+    display: block;
+  }
+  .social {
+    margin-top: 20px;
+  }
+  .btn {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    margin: auto;
+    padding: 40px;
+    margin-bottom: 30px;
+  }
+  .btn .btn-1 {
+    display: block;
+    margin: auto;
+    box-shadow: 3px 3px #f47c7c;
+  }
+  .btn .btn-2 {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 3px 3px #d46b6b;
+  }
+}
